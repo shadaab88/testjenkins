@@ -46,6 +46,17 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  modal_bottom_sheet: ^2.1.0
+  flutter_svg: ^1.1.1+1
+  get: ^4.6.5
+  cached_network_image: ^3.2.1
+  shimmer: ^2.0.0
+  shared_preferences: ^2.0.15
+  fluttertoast: ^8.0.9
+  intl: ^0.17.0
+  global_configuration: ^2.0.0-nullsafety.1
+  dio:
+  pretty_dio_logger: ^1.1.1
 
 flutter_icons:
   android: true
@@ -62,6 +73,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/icon/
+    - assets/cfg/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
