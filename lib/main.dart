@@ -7,17 +7,23 @@ import 'package:global_configuration/global_configuration.dart';
 
 import 'api/api_service.dart';
 
-Future<void> main() async {
+main() {
+  loadData();
+  runApp(const MyApp());
+}
+
+loadData() async {
+  print("LOADING DATA");
   WidgetsFlutterBinding.ensureInitialized();
   await GlobalConfiguration().loadFromAsset("app_config");
   await ApiService.getConfig();
-  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
+
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: GlobalConfiguration().getValue("app_name") ?? "",

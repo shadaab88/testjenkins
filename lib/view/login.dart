@@ -6,6 +6,7 @@ import '../utils/constant.dart';
 import '../utils/custom_cotainer.dart';
 import '../utils/my_text_field.dart';
 import 'otp.dart';
+import 'package:global_configuration/global_configuration.dart';
 
 class LoginPage extends StatelessWidget {
   static const route = "login_page";
@@ -26,6 +27,8 @@ class LoginPage extends StatelessWidget {
               tag: "app_icon",
               transitionOnUserGestures: true,
               child: CustomContainer(
+                height: 100,
+                width: 100,
                 child: Image.asset(
                   "assets/icon/app_icon.png"
                 ),
@@ -47,7 +50,7 @@ class LoginPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Hero(
+          Hero(
             tag: "heading",
             child: Material(
               color: Constants.primary,

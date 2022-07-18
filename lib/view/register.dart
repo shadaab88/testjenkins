@@ -24,6 +24,8 @@ class RegisterPage extends StatelessWidget {
               tag: "app_icon",
               transitionOnUserGestures: true,
               child: CustomContainer(
+                height: 100,
+                width: 100,
                 child: Image.asset(
                     "assets/icon/app_icon.png"
                 ),
