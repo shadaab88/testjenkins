@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: GlobalConfiguration().getValue("app_icon") ?? "",
+      title: GlobalConfiguration().getValue("app_name") ?? "",
       theme: ThemeData(
         primaryColor: Constants.primary,
         scaffoldBackgroundColor: Colors.white,
